@@ -8,13 +8,13 @@ metadata:
 spec:
   type: NodePort
   ports:
-  - port: 8084
-    targetPort: 8084
-    nodePort: 30083
-    name: http
-  - port: 9090
-    targetPort: 9090
-    # nodePort: auto-assigned
-    name: metrics
+    - port: 8084
+      targetPort: 8084
+      nodePort: 30083
+      name: http
+    - port: 9090
+      targetPort: 9090
+      # nodePort: auto-assigne
+      name: metrics
   selector:
     app: llamacpp
